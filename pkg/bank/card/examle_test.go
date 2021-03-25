@@ -6,7 +6,6 @@ import (
 )
 
 func ExamplePaymentSource() {
-	var NewCard types.PaymentSource
 	payments := []types.Card{
 		{
 			Number: "15", 
@@ -26,8 +25,7 @@ func ExamplePaymentSource() {
 	}
 	maxes := PaymentSources(payments)
 	for _, max := range maxes {
-		NewCard.Number=max.Number
-		fmt.Println(NewCard.Number)
+		fmt.Println(max.Number)
 	}
 	//Output:
 	//15
