@@ -10,17 +10,17 @@ func main() {
 	var NewCard types.PaymentSource
 	payments := []types.Card{
 		{
-			Number: "15", 
+			PAN: "15", 
 			Active: true,
 			Balance: 15_000,
 		},
 		{
-			Number:	"99",
+			PAN:	"99",
 			Active: false,
 			Balance: 30_000,
 		},
 		{
-			Number: "18",
+			PAN: "18",
 			Active: true,
 			Balance: 15_000,
 		},
