@@ -19,10 +19,8 @@ type PAN string
 
 //Card представляет информацию о платёжной карте
 type Card struct {
-	Type    string
 	ID		int
 	PAN		PAN
-	Number string
 	Balance Money
 	MinBalance Money
 	Currency Currency

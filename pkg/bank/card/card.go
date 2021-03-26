@@ -17,9 +17,9 @@ func Max(payments []types.Payment) types.Payment{
 func PaymentSources(cards []types.Card) []types.PaymentSource{
 	var operations []types.PaymentSource
 	for _, card := range cards {
-		if ((card.Balance > 0)||(card.Active == true)){
-			operations = append(operations, types.PaymentSource{Type: "card", Number: card.Number, Balance: card.Balance})
+		if ((card.Balance > 0)&&(card.Active == true)){
+			operations = append(operations, types.PaymentSource{Type: "card", Number: string(card.PAN), Balance: card.Balance})
 			}
 		}
-		return operations	
+		return operations
 	}

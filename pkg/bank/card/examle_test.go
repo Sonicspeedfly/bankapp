@@ -8,17 +8,17 @@ import (
 func ExamplePaymentSource() {
 	payments := []types.Card{
 		{
-			Number: "15", 
+			PAN: "15", 
 			Active: true,
 			Balance: 15_000,
 		},
 		{
-			Number:	"99",
+			PAN: "99",
 			Active: false,
 			Balance: 30_000,
 		},
 		{
-			Number: "18",
+			PAN: "33",
 			Active: true,
 			Balance: -15_000,
 		},
@@ -29,6 +29,4 @@ func ExamplePaymentSource() {
 	}
 	//Output:
 	//15
-	//99
-	//18
 }
