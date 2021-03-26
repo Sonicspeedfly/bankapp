@@ -20,7 +20,7 @@ func ExamplePaymentSource() {
 		{
 			Number: "18",
 			Active: true,
-			Balance: 15_000,
+			Balance: -15_000,
 		},
 	}
 	maxes := PaymentSources(payments)
@@ -29,5 +29,6 @@ func ExamplePaymentSource() {
 	}
 	//Output:
 	//15
+	//99
 	//18
 }
